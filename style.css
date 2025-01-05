@@ -23,6 +23,7 @@ html {
 .container-global {
     width: 80%;
     margin: 0 auto;
+    max-width: 1800px;
 }
 
 .padding2em {
@@ -125,11 +126,42 @@ html {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    border: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     background-color: #FCFCFC;
 }
 
+@media (max-width: 1500px) {
+    .grid-parent {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .grid-parent {
+      grid-template-columns: 1fr; 
+    }
+  }
 
+
+.grid__text-item {
+    border-top: 0.5px solid black;
+    border-bottom: 1px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.grid__text-item p {
+    padding-left: 1em;
+}
+
+.grid__text-item img {
+    width: 100%;
+}
+
+.grey {
+    background-color: #EEEEEE;
+}
 
 
 
