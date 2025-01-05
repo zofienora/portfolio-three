@@ -22,7 +22,6 @@ html {
 
 .container-global {
     width: 80%;
-    border: 2px solid red;
     margin: 0 auto;
 }
 
@@ -41,13 +40,78 @@ html {
     font-style: italic;
   }
 
+.flex {
+    display: flex;
+}
+
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.light {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
 /* --------------------------------MAIN----------------------------- */
+
+
+/* Navigtion */
+
+.main__nav {
+    width: 100%;
+}
+
+.main__nav-list {
+    gap: 30px;
+    margin-left: auto;
+    align-items: center;
+
+}
+
+
+.main__logo {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding-right: 2em;
+}
+
+.main__logo a {
+    text-decoration: none;
+    color: #191919;
+}
+
+.list-items {
+    list-style: none; 
+}
+
+.list-items-a {
+    text-decoration: none;
+    color: #191919;
+    font-size: 1rem;
+}
+
+.list-items-a:hover {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+
+
+
+/* Text in Main */
 
 .main {
     height: 100vh;
     width: auto;
     background-color: #FCFCFC;
-    border: 2px solid green;
 }
 
 .main__me {
