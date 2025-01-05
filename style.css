@@ -103,9 +103,6 @@ html {
 }
 
 
-
-
-
 /* Text in Main */
 
 .main {
@@ -122,7 +119,45 @@ html {
 }
 
 
+/* --------------------------------WORK----------------------------- */
 
 
+/* --------------------------------JOURNEY----------------------------- */
 
-/* --------------------------------GLOBAL----------------------------- */
+.journey {
+    background-color: #FCFCFC;
+    padding: 5em 0;
+    color: #191919;
+    font-weight: 200;
+}
+
+.con__journey-p {
+    width: 50%;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.con__journey-img {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+}
+
+.con__journey-img img {
+    width: 60%; 
+}
+
+.con__journey-p a {
+    text-decoration: none;
+    color: #191919;
+}
+
+.con__journey-p a:hover {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* --------------------------------CONNECT----------------------------- */
+
