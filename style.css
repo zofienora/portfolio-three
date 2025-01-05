@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #191919;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* --------------------------------GLOBAL----------------------------- */
+
+.container-global {
+    width: 80%;
+    border: 2px solid red;
+    margin: 0 auto;
+}
+
+.padding2em {
+    padding: 2em 0;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.poppins-thin:hover {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+/* --------------------------------MAIN----------------------------- */
+
+.main {
+    height: 100vh;
+    width: auto;
+    background-color: #FCFCFC;
+    border: 2px solid green;
+}
+
+.main__me {
+    height: 80%;
+    align-content: center;
+    text-align: center;
+    font-size: 3rem;;
+    
+}
+
+
+
+
+
+/* --------------------------------GLOBAL----------------------------- */
