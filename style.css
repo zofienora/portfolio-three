@@ -8,6 +8,7 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #191919;
+    background-color: #FCFCFC;
 }
 
 img {
@@ -56,6 +57,43 @@ html {
     font-weight: 100;
     font-style: italic;
 }
+
+.black-background {
+    background-color: #191919;
+    z-index: 100;
+}
+
+
+
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#191919; /* Black overlay */
+  /*   border-right: 1px solid #FCFCFC;
+    border-left: 1px solid #FCFCFC; */
+    opacity: 1; /* Initially visible */
+    transition: opacity 0.5s ease; /* Smooth transition for disappearing effect */
+}
+
+.grid__text-item:hover .overlay {
+    opacity: 0; /* Make the overlay disappear on hover */
+}
+
+.grid__text-item:hover .work__img {
+    opacity: 1; /* Make sure the image is fully visible when hovering */
+}
+
+
+
+
+
+
 
 /* --------------------------------MAIN----------------------------- */
 
@@ -121,14 +159,18 @@ html {
 
 /* --------------------------------WORK----------------------------- */
 
+.hoveroverprojects {
+    background-color: #FCFCFC;
+}
+
 .grid-parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid #191919;
+    border-bottom: 2px solid #191919;
     background-color: #FCFCFC;
 }
 
@@ -146,10 +188,11 @@ html {
 
 
 .grid__text-item {
-    border-top: 0.5px solid black;
-    border-bottom: 1px solid black;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
+    border-top: 0.5px solid #191919;
+    border-bottom: 1px solid #191919;
+    border-right: 2px solid #191919;
+    border-left: 2px solid #191919;
+    position: relative;
 }
 
 .grid__text-item p {
@@ -174,6 +217,7 @@ html {
     padding: 10em 0;
     color: #191919;
     font-weight: 200;
+    height: 100vh;
 }
 
 .con__journey-p {
@@ -224,7 +268,7 @@ html {
 .marquee-button {
     padding: 1em 2em;
     background-color: transparent; 
-    border: 1px solid black; 
+    border: 1px solid #191919; 
     border-radius: 100px;
     width: 150px;
     text-transform: uppercase;
@@ -273,7 +317,7 @@ html {
 /* facts---------- */
 
 .factspopping {
-    border: 1px solid black;
+    border: 1px solid #191919;
     padding: 2em;
     margin: 2em;
 
@@ -287,7 +331,7 @@ html {
 /* --------------------------------CONNECT----------------------------- */
 
 .connect {
-    border-top: 1px solid black;
+    border-top: 1px solid #191919;
 }
 
 .connectwithme {
@@ -334,6 +378,9 @@ html {
 @media (max-width: 1500px) {
     .connect__contact {
       grid-template-columns: repeat(2, 1fr); 
+    }
+    .overlay {
+        visibility: hidden;
     }
   }
   
