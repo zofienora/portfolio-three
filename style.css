@@ -170,7 +170,7 @@ html {
 
 .journey {
     background-color: #FCFCFC;
-    padding: 5em 0;
+    padding: 10em 0;
     color: #191919;
     font-weight: 200;
 }
@@ -248,7 +248,7 @@ html {
 
 
 /* Hover Effect */
-.marquee-button:hover .marquee-text {
+.marquee-button .marquee-text {
     animation: marquee-animation 30s linear infinite; /* Infinite scrolling animation */
 }
 
