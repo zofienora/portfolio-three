@@ -189,15 +189,11 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    text-align: center;
 }
-
-/* .con__journey-img img {
-    width: 30%; 
-} */
 
 .journey__div-img {
     width: 30%;
-
 }
 
 .con__journey-p a {
