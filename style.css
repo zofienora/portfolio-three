@@ -177,9 +177,10 @@ html {
 
 .con__journey-p {
     width: 50%;
-    font-size: 1.25rem;
+    font-size: 1rem;
     justify-content: center;
-    align-content: center;
+    align-content:flex-start;
+    padding-right: 2em;
 }
 
 .con__journey-img {
@@ -206,6 +207,81 @@ html {
     font-weight: 100;
     font-style: italic;
 }
+
+
+/* FACTS POPPINNNGG */
+
+.journey__facts {
+    height: 100%; 
+}
+
+.facts {
+    font-size: 1.25em;
+    font-weight: 300; 
+}
+
+.marquee-button {
+    padding: 1em 2em;
+    background-color: transparent; 
+    border: 1px solid black; 
+    border-radius: 100px;
+    width: 150px;
+    text-transform: uppercase;
+    overflow: hidden; /* Hide overflowing text */
+    transition: all 0s ease; /* Smooth transition for hover effects */
+    text-align: center; /* Center the text horizontally */
+}
+
+.marquee-container {
+    position: relative;
+    display: flex;
+    flex-direction: row; /* Arrange the text in a horizontal row */
+    width: 100%;
+    height: 100%;
+}
+
+.marquee-text {
+    white-space: nowrap; /* Prevent text wrapping */
+    opacity: 1; /* Text is visible by default */
+    transition: transform 2s ease; /* Smooth transformation */
+}
+
+
+/* Hover Effect */
+.marquee-button:hover .marquee-text {
+    animation: marquee-animation 30s linear infinite; /* Infinite scrolling animation */
+}
+
+.marquee-button:active {
+    background-color: #e0e0e0; /* Darker background on click */
+    border-color: #555; /* Darker border on click */
+    transform: scale(0.95); /* Shrink button slightly for "pressed" effect */
+    transition: transform 0.1s ease; /* Add a smooth transition for the scale effect */
+}
+
+/* Animation */
+@keyframes marquee-animation {
+    0% {
+        transform: translateX(0); /* Start from its current position */
+    }
+    100% {
+        transform: translateX(-100%); /* Move off-screen to the left */
+    }
+}
+
+/* facts---------- */
+
+.factspopping {
+    border: 1px solid black;
+    padding: 2em;
+    margin: 2em;
+
+}
+
+.fact-display.fade-out {
+    opacity: 0; /* Fully transparent */
+}
+
 
 /* --------------------------------CONNECT----------------------------- */
 

@@ -6,7 +6,7 @@ const facts = [
     "Tea over Coffee.",
     "Airports are one of my favorite places — I find the energy there inspiring.",
     "City Walks are my Happy Place.",
-    "I love moss, I think it is beautiful",
+    "I love moss, I think it is beautiful.",
     "I’m convinced that JavaScript is a bit like magic—there’s always something new to discover!",
     "Movies, fashion and architecture often give me ideas for my projects.",
     "No matter how much I learn, z-index always finds a way to surprise me.",
@@ -56,7 +56,7 @@ function generateFact() {
                 }
             });
         }
-    }, 3000);
+    }, 5000);
 }
 
 // Add click event listener to the button
