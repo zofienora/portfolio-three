@@ -421,3 +421,17 @@ html {
     font-style: italic;
     font-weight: 100;
   }
+
+
+  /* -------------------------coding lab------------------------------*/
+
+  .codinglab_div {
+    height: 100vh;
+  }
+
+  .codinglab {
+    margin: auto 0;
+    border: 2px solid red;
+    text-align: center;
+    align-content: center;
+  }
