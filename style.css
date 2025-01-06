@@ -113,7 +113,7 @@ html {
 .main__me {
     height: 80%;
     align-content: center;
-    text-align: center;
+    text-align: left;
     font-size: 3rem;
 }
 
@@ -186,10 +186,18 @@ html {
     width: 50%;
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.con__journey-img img {
-    width: 60%; 
+/* .con__journey-img img {
+    width: 30%; 
+} */
+
+.journey__div-img {
+    width: 30%;
+
 }
 
 .con__journey-p a {
