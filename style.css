@@ -114,7 +114,8 @@ html {
     height: 80%;
     align-content: center;
     text-align: left;
-    font-size: 3rem;
+    font-size: 2vw;
+    
 }
 
 
@@ -296,14 +297,18 @@ html {
 
 .connect__contact {
     border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    overflow: hidden;
 }
 
 .contact__items {
     border: 2px solid greenyellow;
-    padding: 10em 8em;
-    width: 100%;
+    padding: 8em 6em;
     text-align: center;
-    justify-content: center;
 }
 
 .contact__items a {
@@ -325,3 +330,15 @@ html {
 .contact__items:hover a {
     color: #e0e0e0; /* This makes the font color white when hovering over the div */
 }
+
+@media (max-width: 1500px) {
+    .connect__contact {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .connect__contact {
+      grid-template-columns: 1fr; 
+    }
+  }
