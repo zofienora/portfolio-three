@@ -64,3 +64,39 @@ button.addEventListener('click', generateFact);
 
 // ------------------------------------------------------------------------
 
+const square = document.getElementById('randomSquare');
+const main = document.querySelector('main');
+
+let posX = Math.random() * (main.offsetWidth - 50); // Zufällige Startposition X
+let posY = Math.random() * (main.offsetHeight - 50); // Zufällige Startposition Y
+let angle = Math.random() * 360; // Zufälliger Startwinkel
+
+let speedX = (Math.random() - 0.5) * 2; // Zufällige Geschwindigkeit in X-Richtung (±2px pro Frame)
+let speedY = (Math.random() - 0.5) * 2; // Zufällige Geschwindigkeit in Y-Richtung (±2px pro Frame)
+let rotationSpeed = Math.random() * 1 + 1; // Zufällige Rotationsgeschwindigkeit (zwischen 1 und 6 Grad pro Frame)
+
+function moveSquare() {
+    // Berechnung der neuen Position
+    posX += speedX;
+    posY += speedY;
+
+    // Berechnung der neuen Rotation
+    angle += rotationSpeed;
+
+    // Verhindern, dass das Quadrat den Bildschirm verlässt
+    if (posX < 0 || posX > main.offsetWidth - 50) {
+        speedX = -speedX; // Richtungsumkehr bei Bildschirmrand
+    }
+    if (posY < 0 || posY > main.offsetHeight - 50) {
+        speedY = -speedY; // Richtungsumkehr bei Bildschirmrand
+    }
+
+    // Setzen der neuen Position und Rotation
+    square.style.transform = `translate(${posX}px, ${posY}px) rotate(${angle}deg)`;
+
+    // Wiederholen der Bewegung
+    requestAnimationFrame(moveSquare); // Optimierte, kontinuierliche Animation
+}
+
+// Start der Bewegung
+moveSquare();

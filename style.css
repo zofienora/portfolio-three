@@ -489,4 +489,32 @@ html {
     align-content: center;
   }
 
-    /* -------------------------media queries------------------------------*/
+    /* -------------------------random square------------------------------*/
+
+    main {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Set the height to viewport height */
+        overflow: hidden; /* Ensure the square doesn't go outside */
+        border: 1px solid #ccc; /* Optional: border for the main element */
+    }
+    
+    #randomSquare {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background: transparent;
+        border-radius: 5%;
+        transition: transform 0.5s ease;
+    }
+
+/* Diese Klasse wird für kontinuierliche Bewegung und Drehung sorgen */
+@keyframes moveAndRotate {
+    0% {
+        transform: translate(0, 0) rotate(0deg); /* Startposition */
+    }
+    100% {
+        transform: translate(var(--move-x), var(--move-y)) rotate(var(--rotate-angle)); /* Endposition */
+    }
+}
