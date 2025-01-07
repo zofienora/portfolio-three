@@ -63,10 +63,7 @@ html {
     z-index: 100;
 }
 
-
-
-
-
+/*--------------------------------------*/ 
 
 .overlay {
     position: absolute;
@@ -88,11 +85,6 @@ html {
 .grid__text-item:hover .work__img {
     opacity: 1; /* Make sure the image is fully visible when hovering */
 }
-
-
-
-
-
 
 
 /* --------------------------------MAIN----------------------------- */
@@ -152,8 +144,19 @@ html {
     height: 80%;
     align-content: center;
     text-align: left;
-    font-size: 2vw;
-    
+    font-size: 3rem;
+}
+
+@media (max-width: 700px) {
+    .main__me {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main__me {
+        font-size: 2rem;
+    }
 }
 
 
@@ -253,6 +256,42 @@ html {
     font-style: italic;
 }
 
+@media (max-width: 900px) {
+    .mediaflex {
+        display: flex;
+        flex-direction: column;
+    }
+    .con__journey-p {
+        width: 100%;
+    }
+
+    .con__journey-img {
+        text-align: left;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        border: 2px solid yellow;
+    }
+    .journey__div-img {
+        width: 50%;
+        border: 2px solid green;
+        height: 100%;
+        margin-right: 3em;
+    }
+
+    .journey__facts {
+        border: 2px solid red;
+        width: 50%;
+        align-items: flex-start;
+        height: 100%;
+    }
+}
+
 
 /* FACTS POPPINNNGG */
 
@@ -326,6 +365,8 @@ html {
 .fact-display.fade-out {
     opacity: 0; /* Fully transparent */
 }
+
+@med
 
 
 /* --------------------------------CONNECT----------------------------- */
@@ -435,3 +476,5 @@ html {
     text-align: center;
     align-content: center;
   }
+
+    /* -------------------------media queries------------------------------*/
