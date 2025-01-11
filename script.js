@@ -100,3 +100,7 @@ function moveSquare() {
 
 // Start der Bewegung
 moveSquare();
+
+
+// ---------the navigation bar--------------------
+
