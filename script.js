@@ -71,9 +71,9 @@ let posX = Math.random() * (main.offsetWidth - 50); // Zufällige Startposition 
 let posY = Math.random() * (main.offsetHeight - 50); // Zufällige Startposition Y
 let angle = Math.random() * 360; // Zufälliger Startwinkel
 
-let speedX = (Math.random() - 0.5) * 2; // Zufällige Geschwindigkeit in X-Richtung (±2px pro Frame)
-let speedY = (Math.random() - 0.5) * 2; // Zufällige Geschwindigkeit in Y-Richtung (±2px pro Frame)
-let rotationSpeed = Math.random() * 1 + 1; // Zufällige Rotationsgeschwindigkeit (zwischen 1 und 6 Grad pro Frame)
+let speedX = (Math.random() - 0.5) * 1; // Zufällige Geschwindigkeit in X-Richtung (±2px pro Frame)
+let speedY = (Math.random() - 0.5) * 1; // Zufällige Geschwindigkeit in Y-Richtung (±2px pro Frame)
+let rotationSpeed = Math.random() * 1 + 0; // Zufällige Rotationsgeschwindigkeit (zwischen 1 und 6 Grad pro Frame)
 
 function moveSquare() {
     // Berechnung der neuen Position
