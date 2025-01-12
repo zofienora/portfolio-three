@@ -229,7 +229,7 @@ html {
     padding: 10em 0;
     color: #191919;
     font-weight: 200;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .con__journey-p {
