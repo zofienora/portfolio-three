@@ -225,8 +225,8 @@ html {
 }
 
 .con__journey-p {
-    width: 70%;
-    font-size: 1.5rem;
+    width: 80%;
+    font-size: 3rem;
 }
 
 .con__journey-p a {
@@ -276,7 +276,7 @@ html {
 }
 
 .facts {
-    font-size: 1.25em;
+    font-size: 2em;
     font-weight: 300; 
 }
 
