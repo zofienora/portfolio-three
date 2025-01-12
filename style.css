@@ -201,6 +201,7 @@ html {
 
 .grid__text-item p {
     padding-left: 1em;
+    height: 100%;
 }
 
 .grid__text-item img {
