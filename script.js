@@ -104,3 +104,13 @@ moveSquare();
 
 // ---------the navigation bar--------------------
 
+// Select the hamburger menu and the navigation menu
+const hamburger = document.querySelector('.ham-menu');
+const navMenu = document.querySelector('.main__nav');
+
+// Add an event listener for the click event on the hamburger menu
+hamburger.addEventListener('click', () => {
+  console.log('Hamburger clicked!'); // Add this to verify the click is being detected
+  // Toggle a class to show/hide the navigation menu
+  navMenu.classList.toggle('active');
+});
