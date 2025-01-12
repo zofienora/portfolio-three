@@ -131,6 +131,12 @@ html {
     font-style: italic;
 }
 
+@media (max-width:1000px) {
+    .main__nav-list {
+        visibility: hidden;
+    }
+}
+
 /* Text in Main */
 
 .main {
@@ -215,6 +221,7 @@ html {
 
 
 
+
 /* --------------------------------JOURNEY----------------------------- */
 
 .journey {
@@ -268,6 +275,12 @@ html {
     height: 100%;
 }
 
+@media (max-width: 1000px) {
+    .con__journey-p {
+        font-size: 1.5rem;
+    }
+}
+
 
 
 /* FACTS POPPINNNGG */
@@ -306,15 +319,7 @@ html {
     transition: transform 0.1s ease; /* Add a smooth transition for the scale effect */
 }
 
-/* Animation */
-@keyframes marquee-animation {
-    0% {
-        transform: translateX(0); /* Start from its current position */
-    }
-    100% {
-        transform: translateX(-100%); /* Move off-screen to the left */
-    }
-}
+
 
 /* facts---------- */
 
@@ -328,18 +333,7 @@ html {
     opacity: 0; /* Fully transparent */
 }
 
-@media (max-width: 900px) {
-    .factspopping {
-        padding: 3em;
-        margin: 3em 0;
-    }
 
-    .marquee-button {
-        margin: 1em 0;
-    }
-
-    
-}
 
 
 /* --------------------------------CONNECT----------------------------- */
@@ -399,9 +393,18 @@ html {
   }
   
   @media (max-width: 1000px) {
-    .connect__contact {
-      grid-template-columns: 1fr; 
+    
+    .connectwithme {
+        font-size: 1.5rem;
     }
+    .contact__items {
+        padding: 2em 2em;
+    }
+    .contact__items a {
+        font-size: 1rem;
+    }
+
+
   }
 
   /* -------------------Footer-----------------------*/
@@ -447,6 +450,13 @@ html {
     font-weight: 100;
   }
 
+@media (max-width:1000px) {
+    .connect_bye {
+        font-size: 0.7rem;
+    }
+
+    
+}
 
   /* -------------------------coding lab------------------------------*/
 
