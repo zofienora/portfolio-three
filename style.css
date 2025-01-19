@@ -131,9 +131,43 @@ html {
     font-style: italic;
 }
 
+.openButton {
+    display: none;
+}
+
 @media (max-width:1000px) {
+    .main__nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width:100%; 
+        z-index: 10;
+        background-color: white;
+        opacity: 0.9;
+        transition: right 300ms ease-out;
+    }
+
+    .main__nav.show {
+        right:0;
+    }
+
     .main__nav-list {
-        visibility: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 4em;
+        text-align: left;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .openButton {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        font-weight: 100;
+        color: grey;
     }
 }
 
