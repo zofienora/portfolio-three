@@ -131,8 +131,21 @@ html {
     font-style: italic;
 }
 
-.openButton {
+.closeButton {
     display: none;
+}
+
+.openButton {
+    width: 50px;
+    position: fixed;
+    top: 0;
+    right: 5%;
+    padding-top: 1.5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+
 }
 
 @media (max-width:1000px) {
@@ -161,13 +174,17 @@ html {
         width: 100%;
     }
 
-    .openButton {
+    .closeButton {
         display: block;
         border: none;
         background-color: transparent;
         font-size: 1.5rem;
         font-weight: 100;
         color: grey;
+    }
+
+    .openButton {
+        display: block;
     }
 }
 

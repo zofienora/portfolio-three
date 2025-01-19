@@ -114,3 +114,16 @@ hamburger.addEventListener('click', () => {
   // Toggle a class to show/hide the navigation menu
   navMenu.classList.toggle('active');
 });
+
+
+// ------------functions for open and closing nav sidebar--------------------
+
+const navbar = document.getElementById("navbar");
+
+function openSidebar() {
+    navbar.classList.add('show');
+}
+
+function closeSidebar() {
+    navbar.classList.remove('show');
+}
