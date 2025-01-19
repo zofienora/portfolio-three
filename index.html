@@ -20,10 +20,10 @@
         <div class="main__logo">
             <a href="#main"><p>nora<span class="light">keil</span></p></a>
         </div>
-        <div ><button class="openButton" id="openSidebar" onclick="openSidebar()"><img src="images/menu.png" alt="open navigation sidebar"></button></div>
-        <div class="main__nav flex poppins-light" id="navbar">
+        <div ><button class="openButton" id="openSidebar"><img src="images/menu.png" alt="open navigation sidebar"></button></div>
+        <div id="navbar" class="main__nav flex poppins-light" >
             <ul class="main__nav-list flex">
-                <button class="closeButton" id="closeSidebar" onclick="closeSidebar()">X</button>
+                <button class="closeButton" id="closeSidebar">X</button>
                 <li class="list-items"><a class="list-items-a" href="#base">BASE</a></li>
                 <li class="list-items"><a class="list-items-a" href="#work">WORK</a></li>
                 <li class="list-items"><a class="list-items-a" href="#journey">JOURNEY</a></li>
@@ -43,7 +43,6 @@
         <h2 class="connectwithme">Projects</h2>
     </div>
 </section>
-
 <section class="work grid-parent">
     <div class="work grid-item grid_one">
         <div class="grid__text-item">
@@ -100,9 +99,6 @@
         </div>      
     </div>
 </section>
-
-
-
 <!--------------------------------JOURNEY-------------------------------------------------------------->
   <section class="journey poppins-light" id="journey">
     <div class="container-global">
@@ -125,8 +121,6 @@
         </div>
     </div>
   </section>
-
-
 <!--------------------------------CONNECT-------------------------------------------------------------->
   <footer class="connect" id="connect">
     <div class="container-global">
@@ -172,12 +166,6 @@
 
   </footer>
 
-
-
-
-
-
-
-    <script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>

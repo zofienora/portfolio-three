@@ -1,4 +1,8 @@
-// Array of facts about you
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM fully loaded and parsed");
+
+
+    // Array of facts about you
 const facts = [
     "I love coding in the early morning hours.",
     "I enjoy watching the sunrise.",
@@ -102,28 +106,50 @@ function moveSquare() {
 moveSquare();
 
 
-// ---------the navigation bar--------------------
+// ------------functions for open and closing nav sidebar--------------------
 
-// Select the hamburger menu and the navigation menu
-const hamburger = document.querySelector('.ham-menu');
-const navMenu = document.querySelector('.main__nav');
 
-// Add an event listener for the click event on the hamburger menu
-hamburger.addEventListener('click', () => {
-  console.log('Hamburger clicked!'); // Add this to verify the click is being detected
-  // Toggle a class to show/hide the navigation menu
-  navMenu.classList.toggle('active');
+    const navbar = document.getElementById("navbar");
+    const openButton = document.getElementById("openSidebar");
+    const closeButton = document.getElementById("closeSidebar");
+
+    function openSidebar() {
+        console.log("Opening Sidebar...");
+        navbar.classList.add("show");
+    }
+
+    function closeSidebar() {
+        console.log("Closing Sidebar...");
+        navbar.classList.remove("show");
+    }
+
+    // Attach event listeners
+    openButton.addEventListener("click", openSidebar);
+    closeButton.addEventListener("click", closeSidebar);
+
+       // Select all the anchor tags inside the navbar (sidebar)
+       const navLinks = document.querySelectorAll("#navbar a");
+
+       // Close sidebar when any link is clicked
+       navLinks.forEach(link => {
+           link.addEventListener("click", () => {
+               closeSidebar();
+           });
+       });
+
+   // Optional: If you want smooth scroll behavior for anchor links, you can add this
+   navLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+        // Prevent default anchor link behavior so you can control the scroll
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+        closeSidebar(); // Close the sidebar after navigating
+    });
 });
 
 
-// ------------functions for open and closing nav sidebar--------------------
-
-const navbar = document.getElementById("navbar");
-
-function openSidebar() {
-    navbar.classList.add('show');
-}
-
-function closeSidebar() {
-    navbar.classList.remove('show');
-}
+});
